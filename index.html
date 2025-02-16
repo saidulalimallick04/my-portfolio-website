@@ -4,123 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saidul Ali Mallick</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="title-logo-div">
-
-            <!-- The overlay -->
-     <div id="myNav" class="overlay">
-
-        <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-        <!-- Overlay content -->
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Edcutation</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-             </div>
-      
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <div class="left-side">
+                <h1>Saidul Ali Mallick</h1>
+                <p class="animated-text">
+                   <span> I am a </span><span class="typewriter"></span>
+                </p>
             </div>
-      
-      <!-- Use any element to open/show the overlay navigation menu -->
-            <span onclick="openNav()"><label  class="hamburger">
-                <input type="checkbox">
-                <svg viewBox="0 0 32 32">
-                  <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                  <path class="line" d="M7 16 27 16"></path>
-                </svg>
-              </label> 
-          </span>
-
-            <span class="title">I am Saidul Ali  Mallick</span>
-        </div>
-
-        <div class="search-bar">
-            <input type="text" name="" id="search_input">
-        </div>
-
-        <div class="additional-manu">
-            
-            <img class="additional-manu-logo" src="Components\Logos\menu-logo.png" alt="Additional Menu">
-            
-        </div>
-    </nav>
-    
-
-    
-
-    <main class="main-container">
-        <div class="home-page-dashboard">
-            <div class="hpg-l1">
-
-                <a class="home-page-dashboard-item" href="">
-                    <img class="sample-img" src="Components\about-image.png" alt="Sample">
-                    <p>About me</p>
-                </a>
-                <a class="home-page-dashboard-item" href="">
-                    <img class="sample-img"  src="Components\edcutation-image.png" alt="Sample">
-                    <p>Edcutation</p>
-                </a>
-
+            <div class="right-side">
+                <img src="Components/profilepic.jpg" alt="Profile Picture">
             </div>
-
-            <div class="hpg-l2-profile-pic" id="profile_pic">
+        </div>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p> I am Saidul Ali Mallick, from Purba Bardhaman.
+            <br>I am a third year B.Tech Computer Science and Engineering student specialized (Artificial Intelligence & Machine Learning).
+            <br>I have a deep passion for technology and innovation.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>TTTPy - Tic Tac Toe</h3>
+            <p>Description:  This is a console-based Tic Tac Toe game. </p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+        
+    </section>
+    <section  id="skills">
+        <h2>Skills</h2>
+        <div class="item-skills">
+            <span><ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Django</li>
+                <li>--</li>
+                <li>---</li>
                 
-                <img class="profile-pic" src="Components\profilePic.jpg" alt="Profile Picture"><br>
-                <p>: SAIDUL ALI MALLICK :</p>
+            </ul></span>
+            <span><ul>
+                <li>C</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>-</li>
+                <li>--</li>
                 
-            </div>
-
-            <div class="hpg-l3">
-
-                <a class="home-page-dashboard-item" href="">
-                    <img class="sample-img" src="Components\sample-image.png" alt="Sample">
-                    <p>Option3</p>
-                </a>
-                <a class="home-page-dashboard-item" href="">
-                    <img class="sample-img" src="Components\sample-image.png" alt="Sample">
-                    <p>Option4</p>
-                </a>
-
-            </div>
+            </ul></span>
+            <span><ul>
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>Machine Learning</li>
+                <li>--</li>
+                <li>---</li>
+                
+            </ul></span>
+            <span><ul>
+                <li>Git</li>
+                <li>Github</li>
+                <li>VS Code</li>
+                <li>-</li>
+                <li>--</li>
+                
+            </ul></span>
         </div>
-
-
-    </main>
-     
-
-    <footer class="footer-container">
-        <div class="footer-sub-div">
-            <a class="footer-div-option" href="">Option1</a>
-            <a class="footer-div-option" href="">Option2</a>
-            <a class="footer-div-option" href="">Option3</a>
-            <a class="footer-div-option" href="">Option4</a>
-            <a class="footer-div-option" href="">Option5</a>
-        </div>
-
-        <div class="footer-sub-div">
-            <a class="footer-div-option" href="">Option1</a>
-            <a class="footer-div-option" href="">Option2</a>
-            <a class="footer-div-option" href="">Option3</a>
-            <a class="footer-div-option" href="">Option4</a>
-            <a class="footer-div-option" href="">Option5</a>
-        </div>
-
-        <div class="footer-sub-div">
-
-        </div>
-
-        <div class="footer-sub-div">
-
-        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 SAM Pvt Ltd. All rights reserved.</p>
     </footer>
-
-
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
