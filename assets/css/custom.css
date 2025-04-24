@@ -557,6 +557,7 @@ pre code {
 
 .container {
   width: 100%;
+  padding-top: 15px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -5058,7 +5059,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 3px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
 }
 
@@ -11606,7 +11607,7 @@ pre .code {
 }
 
 .section {
-  padding: 80px 0;
+  padding-bottom: 80px ;
 }
 
 .section.bg-custom-gray {
@@ -11614,12 +11615,12 @@ pre .code {
 }
 
 .about-section {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 3px solid #dee2e6;
 }
 
 .about-section .about-card {
   padding: 60px;
-  border-right: 1px solid #dee2e6;
+  border-right: 3px solid #dee2e6;
 }
 
 .about-section .about-card:last-child {
