@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saidulalimallick.pages.dev/sitemap.xml
