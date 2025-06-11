@@ -69,7 +69,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffff;
 }
 
 [tabindex="-1"]:focus {
@@ -11285,6 +11285,7 @@ p {
 .blog-card .img-holder {
   min-width: 350px;
   max-width: 350px;
+  
 }
 
 .blog-card .img-holder img {
@@ -11292,6 +11293,7 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 2%;
 }
 
 .blog-card .content-holder {
@@ -11442,8 +11444,7 @@ pre .code {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
-  -weblit-transition: 1s;
-  z-index: 1;
+  z-index: 0;
 }
 
 .navbar .brand .brand-txt .brand-subtitle {
@@ -11608,6 +11609,7 @@ pre .code {
 
 .section {
   padding-bottom: 80px ;
+  scroll-margin-top: 80px;
 }
 
 .section.bg-custom-gray {
